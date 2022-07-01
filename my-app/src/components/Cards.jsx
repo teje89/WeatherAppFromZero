@@ -6,7 +6,7 @@ export default function Cards(props){
     <div> {props.cities.map((ciudad, index) => {
         return (
             <Card 
-            key={ciudad.id} 
+            key={index} //se le puede poner tb el ID, si no tenemos, podemos usar index
             max={ciudad.main.temp_max} 
             min={ciudad.main.temp_min} 
             img={ciudad.weather[0].icon} 
